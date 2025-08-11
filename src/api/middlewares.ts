@@ -25,7 +25,16 @@ export default defineMiddlewares({
       middlewares: [
         validateAndTransformQuery(GetStoreReviewsSchema, {
           isList: true,
-          defaults: ["id", "rating", "title", "first_name", "last_name", "content", "created_at"]
+          defaults: [
+            "id",
+            "rating",
+            "title",
+            "first_name",
+            "last_name",
+            "content",
+            "customer_id",
+            "created_at",
+          ]
         })
       ]
     },
